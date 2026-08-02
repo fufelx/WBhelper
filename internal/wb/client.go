@@ -13,8 +13,7 @@ type Client struct {
 
 func New(token string) *Client {
 	return &Client{
-		baseURL: "https://common-api.wildberries.ru",
-		token:   token,
-		http:    &http.Client{Timeout: 10 * time.Second},
+		token: token,
+		http:  &http.Client{Timeout: 10 * time.Second},
 	}
 }
