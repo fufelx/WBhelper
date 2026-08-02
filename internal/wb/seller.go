@@ -8,7 +8,7 @@ import (
 )
 
 func (c *Client) GetSellerInfo() (*SellerInfo, error) {
-	req, err := http.NewRequest("GET", c.baseURL+"/api/v1/seller-info", nil)
+	req, err := http.NewRequest("GET", "https://common-api.wildberries.ru/api/v1/seller-info", nil)
 	if err != nil {
 		return nil, err
 	}
