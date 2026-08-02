@@ -39,7 +39,7 @@ next:
 
 	if chatevent.Result.TotalEvents != 0 {
 		next = strconv.FormatInt(chatevent.Result.Next, 10)
-		time.Sleep(time.Second * 3) // Добавляем задержку перед следующим запросом
+		time.Sleep(time.Second * 3)
 		goto next
 	}
 }
